@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="YouTube-Drive-Backup is a personal, self-hosted Google Drive upload workflow.">
+  <title>YouTube-Drive-Backup | Personal Drive Uploader</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: #f5f7fc; color: #192a42; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    header { background: #102843; color: #fff; padding: 22px max(6vw, 20px); }
+    header strong { font-size: 1.03rem; }
+    main { max-width: 810px; margin: 64px auto; padding: 0 24px; }
+    .eyebrow { font-size: .83rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: #3561aa; }
+    h1 { font-size: clamp(2rem, 6vw, 3.25rem); line-height: 1.16; margin: 12px 0 20px; }
+    p, li { font-size: 1.03rem; line-height: 1.75; }
+    .card { background: white; border: 1px solid #dde5f0; border-radius: 16px; padding: 24px; margin: 24px 0; box-shadow: 0 9px 30px rgba(16,40,67,.05); }
+    h2 { font-size: 1.2rem; margin-top: 0; }
+    a { color: #185aa6; }
+    footer { max-width: 810px; margin: 55px auto 26px; padding: 0 24px; font-size: .88rem; color: #4a5b70; }
+  </style>
+</head>
+<body>
+<header><strong>YouTube-Drive-Backup</strong></header>
+<main>
+  <div class="eyebrow">Personal · Self-hosted · Non-commercial</div>
+  <h1>A personal workflow for saving files to Google Drive</h1>
+  <p>YouTube-Drive-Backup is a personal, self-hosted workflow that helps its operator transfer locally prepared video and subtitle files to their own Google Drive storage using <a href="https://rclone.org/drive/">rclone</a> and the Google Drive API.</p>
+  <section class="card">
+    <h2>What it does</h2>
+    <ul>
+      <li>Connects Google Drive accounts authorized by the account owner.</li>
+      <li>Uploads files and organizes them into folders in the owner's Drive.</li>
+      <li>Checks uploaded files before the operator's local workflow removes temporary copies.</li>
+    </ul>
+    <p>This is a private utility, not a publicly available upload service. This website does not accept files, Google passwords, or OAuth authorization tokens.</p>
+  </section>
+  <section class="card">
+    <h2>Google Drive access</h2>
+    <p>The workflow requests <code>drive.file</code> access for files it creates or that the user explicitly makes available to the app. OAuth credentials are held in the operator's local rclone configuration, not on this website. Files remain in Google Drive accounts controlled by the owner.</p>
+    <p>For details about data handling, please read the <a href="/privacy.html">Privacy Policy</a>.</p>
+  </section>
+  <p lang="ko">이 사이트는 개인용 Google Drive 파일 업로드 도구의 안내 페이지입니다. 파일 및 인증 정보를 이 웹사이트에서 수집하지 않습니다.</p>
+</main>
+<footer>
+  <a href="/privacy.html">Privacy Policy</a> ·
+  <a href="https://github.com/gury1228/gury1228.github.io/issues">Contact via GitHub Issues</a><br>
+  Personal use only. No public account registration or file hosting.
+</footer>
+</body>
+</html>
